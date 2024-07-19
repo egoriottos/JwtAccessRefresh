@@ -1,0 +1,11 @@
+services:
+
+  postgres:
+    container_name: "jwt"
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=jwt'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=user'
+    ports:
+      - '6432:5432'
